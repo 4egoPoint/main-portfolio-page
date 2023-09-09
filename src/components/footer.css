@@ -1,0 +1,20 @@
+
+.footer{
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   background-color: #81E9E2;
+   height: 100%;
+   width: 100%;
+}
+.footer__row{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.footer__link{
+   padding: 10px;
+   text-align: center;
+}
+.footer__icon{
+}
