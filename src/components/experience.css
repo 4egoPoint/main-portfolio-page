@@ -1,6 +1,7 @@
 .experience {
    padding: 10px;
    width: 100%;
+   overflow: hidden;
 }
 
 .experience__title {
@@ -35,7 +36,8 @@
       width: 100%;
    }
 }
-.skill-item1{
+
+.skill-item1 {
    text-decoration: none;
    min-height: 250px;
    width: 80%;
@@ -46,6 +48,7 @@
    border-radius: 15px;
    padding: 15px;
    @media (max-width: 550px) {
+      align-self: normal;
       width: 100%;
    }
 }
@@ -58,7 +61,8 @@
    text-align: left;
    font-size: 38px;
 }
-.skill-item1__title{
+
+.skill-item1__title {
    display: flex;
    align-items: center;
    justify-content: flex-end;

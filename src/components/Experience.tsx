@@ -2,6 +2,7 @@ import { motion, useInView, useAnimation } from "framer-motion"
 import { BiLogoReact, BiLogoRedux, BiLogoJavascript, BiSolidFileCss, BiSolidFileHtml, BiLogoTypescript, } from 'react-icons/bi'
 import "./experience.css"
 import { useEffect, useRef } from "react"
+import { log } from "console"
 
 const Experience = () => {
    useEffect (() => { window.scrollTo (0, 0); }, [])
@@ -14,6 +15,8 @@ const Experience = () => {
    const is1InView = useInView(ref1, {once:true})
    const is2InView = useInView(ref2, {once:true})
 
+   console.log(ref);
+   
 
    const mainControls = useAnimation()
    const mainControls1 = useAnimation()
@@ -38,8 +41,8 @@ const Experience = () => {
          <div className="experience__colum">
             <motion.a  ref={ref}
                variants={{
-                  hidden: { opacity: 0, x: 1000 },
-                  visible: { opacity: 1, x: 0 }
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 }
                }}
                initial="hidden"
                animate={mainControls}
@@ -53,8 +56,8 @@ const Experience = () => {
 
             <motion.a
                variants={{
-                  hidden: { opacity: 0, x: -1000 },
-                  visible: { opacity: 1, x: 0 }
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 }
                }}
                initial="hidden"
                animate={mainControls}
@@ -68,8 +71,8 @@ const Experience = () => {
 
             <motion.a   ref={ref1}
                variants={{
-                  hidden: { opacity: 0, x: 1000 },
-                  visible: { opacity: 1, x: 0 }
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 }
                }}
                initial="hidden"
                animate={mainControls1}
@@ -83,8 +86,8 @@ const Experience = () => {
 
             <motion.a
                variants={{
-                  hidden: { opacity: 0, x: -1000 },
-                  visible: { opacity: 1, x: 0 }
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 }
                }}
                initial="hidden"
                animate={mainControls1}
@@ -98,8 +101,8 @@ const Experience = () => {
 
             <motion.a   ref={ref2}
                variants={{
-                  hidden: { opacity: 0, x: 1000 },
-                  visible: { opacity: 1, x: 0 }
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 }
                }}
                initial="hidden"
                animate={mainControls2}
@@ -113,8 +116,8 @@ const Experience = () => {
 
             <motion.a
                variants={{
-                  hidden: { opacity: 0, x: -1000 },
-                  visible: { opacity: 1, x: 0 }
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 }
                }}
                initial="hidden"
                animate={mainControls2}
