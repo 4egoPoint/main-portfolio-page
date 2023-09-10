@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
+import ItemPage from "./components/pages/ItemPage";
 
 function App() {
    return (
@@ -15,6 +16,7 @@ function App() {
                   <Route path="/" element={<Layout />}>
                      <Route index element={<Home />} />
                      <Route path="experience" element={<Experience />} />
+                     <Route path="itemPage1" element={<ItemPage />} />
                   </Route>
                </Routes>
             </BrowserRouter>

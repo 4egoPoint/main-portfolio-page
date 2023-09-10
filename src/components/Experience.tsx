@@ -4,6 +4,8 @@ import "./experience.css"
 import { useEffect, useRef } from "react"
 
 const Experience = () => {
+   useEffect (() => { window.scrollTo (0, 0); }, [])
+
    const ref = useRef(null)
    const ref1 = useRef(null)
    const ref2 = useRef(null)

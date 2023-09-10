@@ -11,10 +11,12 @@ const PortfolioList = () => {
             <h2 className="section-second__title">My projects</h2>
             <div className="section-second__list">
 
-               <PortfolioExample />
-               <PortfolioExample />
-               <PortfolioExample />
-               <PortfolioExample />
+               <PortfolioExample path={"/itemPage1"} />
+               <PortfolioExample path={"/itemPage1"} />
+               <PortfolioExample path={"/itemPage1"} />
+               <PortfolioExample path={"/itemPage1"} />
+               <PortfolioExample path={"/itemPage1"} />
+               <PortfolioExample path={"/itemPage1"} />
 
             </div>
          </div>

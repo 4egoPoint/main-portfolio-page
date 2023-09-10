@@ -1,8 +1,10 @@
 
 import { motion } from "framer-motion"
 import "./homeMe.css"
+import { useEffect } from "react";
 
 const HomeMe = () => {
+   useEffect (() => { window.scrollTo (0, 0); }, [])
    return (
       <div className="home__section-first section-first">
          <div className="section-first__wrapper">

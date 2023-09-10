@@ -1,4 +1,5 @@
 
+import Footing from "./Footing"
 import HomeMe from "./HomeMe"
 import PortfolioList from "./PortfolioList"
 import "./home.css"
@@ -12,6 +13,7 @@ const Home = () => {
 
             <PortfolioList />
 
+            <Footing />
          </div>
       </div>
    )
