@@ -4,7 +4,7 @@ import "./homeMe.css"
 import { useEffect } from "react";
 
 const HomeMe = () => {
-   useEffect (() => { window.scrollTo (0, 0); }, [])
+   useEffect(() => { window.scrollTo(0, 0); }, [])
    return (
       <div className="home__section-first section-first">
          <div className="section-first__wrapper">
@@ -17,7 +17,7 @@ const HomeMe = () => {
                animate="visible"
                transition={{ duration: 0.5, delay: 0.25 }}
                className="section-first__img-div">
-               <img className="section-first__img" src={require('../img/avatar.jpg')} alt="avatar" />
+               <div className="section-first__img" ></div>
             </motion.div>
             <motion.div
                variants={{
@@ -30,7 +30,7 @@ const HomeMe = () => {
                className="section-first__content">
                <h1 className="section-first__title">Front end <br />Developer</h1>
                <div className="section-first__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia, excepturi vitae animi ex numquam?
+                  I'm Frontend Developer, use React to create amazing UI on websites for clients.
                </div>
             </motion.div>
          </div>
@@ -44,7 +44,10 @@ const HomeMe = () => {
                animate="visible"
                transition={{ duration: 0.5, delay: 0.25 }}
                className="section-first__about-text">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sed ducimus at consequatur minima accusamus nostrum voluptatem atque sint perferendis laboriosam, asperiores nemo repudiandae odio quibusdam, quo quae impedit qui doloribus aspernatur vitae possimus cum, nulla accusantium. Numquam, totam iusto.
+               I have already created many
+               projects using current technologies. My goal is to create great sites for users
+               so that everyone enjoys browsing the site. My projects are fully responsive to any device. Also, my goal is to
+               become a Senior as soon as possible and I'm ready to work on what.
             </motion.div>
 
          </div>

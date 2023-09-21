@@ -14,7 +14,7 @@ function App() {
                   <Route path="/" element={<Layout />}>
                      <Route index element={<Home />} />
                      <Route path="experience" element={<Experience />} />
-                     <Route path="itemPage1" element={<ItemPage />} />
+                     <Route path="/pages/:id" element={<ItemPage />} />
                   </Route>
                </Routes>
             </BrowserRouter>

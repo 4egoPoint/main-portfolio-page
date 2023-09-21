@@ -1,5 +1,6 @@
 
 
+import PortfolioCrypto from "./pages/PortfolioCrypto"
 import PortfolioExample from "./pages/PortfolioExample"
 import "./portfolioList.css"
 
@@ -10,14 +11,8 @@ const PortfolioList = () => {
          <div className="section-second__wrapper">
             <h2 className="section-second__title">My projects</h2>
             <div className="section-second__list">
-
-               <PortfolioExample path={"/itemPage1"} />
-               <PortfolioExample path={"/itemPage1"} />
-               <PortfolioExample path={"/itemPage1"} />
-               <PortfolioExample path={"/itemPage1"} />
-               <PortfolioExample path={"/itemPage1"} />
-               <PortfolioExample path={"/itemPage1"} />
-
+               <PortfolioExample />
+               <PortfolioCrypto />
             </div>
          </div>
       </div>
